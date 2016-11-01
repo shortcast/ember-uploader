@@ -71,7 +71,7 @@ export default Uploader.extend({
     const method = get(this, 'signingMethod');
     const signingAjaxSettings = get(this, 'signingAjaxSettings');
 
-    extra.name = file.name;
+    extra.name = extra.name || file.name;
     extra.type = file.type;
     extra.size = file.size;
 
