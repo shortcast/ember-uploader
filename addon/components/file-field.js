@@ -11,7 +11,8 @@ export default Ember.Component.extend(Ember.Evented, {
     'accept',
     'autofocus',
     'required',
-    'multiple'
+    'multiple',
+    'capture'
   ],
   multiple: false,
   change (event) {
